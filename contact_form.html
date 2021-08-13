@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qahiri&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1305e8c9f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About Daniel</title>
+  </head>
+  <body>
+    <header>
+      <h1>All about Daniel</h1>
+      <span style="font-size: 48px; color: Dodgerblue">
+        <i class="fas fa-laptop"></i>
+      </span>
+      <nav>
+        <br />
+        <a href="my-projects.html">My Projects</a>
+        <br /><a href="index.html">Home</a>
+      </nav>
+    </header>
+    <h1>Contact me</h1>
+    <form method="GET">
+      <label
+        >Your Name
+        <input type="text" name="applicantName" />
+      </label>
+      <br />
+      <label
+        >Your Email
+        <input type="email" name="applicantEmail" />
+      </label>
+      <!-- the other label syntax-->
+      <label for="city"> What city you're in?</label>
+
+      <input id="city" type="text" name="applicantCity" />
+
+      <label
+        >Tell me how can I help you
+        <textarea name="applicantReason" rows="4" cols="50"></textarea>
+      </label>
+
+      <fieldset class="checkbox">
+        What types of services are u interested in?
+
+        <label>
+          <input type="checkbox" name="type" value="coding" />Coding<span
+            class="checkmark"
+          ></span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="type" value="pt" />Personal Training<span
+            class="checkmark"
+          ></span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="type" value="other" />other<span
+            class="checkmark"
+          ></span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Is it urgent?</legend>
+        <label>Yes <input type="radio" name="special" id="yes" /></label>
+        <label>No <input type="radio" name="special" id="no" /></label>
+      </fieldset>
+
+      <label
+        >To create account, enter password
+        <input type="password" name="applicantPassword" />
+      </label>
+
+      <input type="submit" value="Send message" />
+    </form>
+
+    <br />
+    <footer>
+      <p>Made by Daniel</p>
+    </footer>
+  </body>
+</html>
